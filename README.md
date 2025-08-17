@@ -16,35 +16,31 @@
 
 <ol>
     <li>Run the following command in the root of the project folder
-        ```bash
-            python -m venv .venv 
+        ```bash python -m venv venv 
         ```
     </li>
     <li>
         Activate the newly created python venv
-        ```bash
-            source .venv/Scripts/activate
+        ```bash source .venv/Scripts/activate
         ```
     </li>
     <li>
         Install all required dependencies:
-        ```bash
-            pip install -r requirements.txt
+        ```bash pip install -r requirements.txt
         ```
     </li>
     <li>
         Set up Jupyter Notebook kernel:
-        ```bash
-            python -m ipykernel install --user --name=.venv --display-name="Random Name Here"
+        ```bash python -m ipykernel install --user --name=venv --display-name="Random Name Here"
         ```
     </li>
     <li>
         Open Jupyter Notebook:
-        ```bash
-            jupyter notebook
+        ```bash jupyter notebook
         ```
     </li>
 </ol>
+
 ---
 
 ## To run your own ticker example, follow these three simple steps:
@@ -52,14 +48,13 @@
 <ol>
 
 <li>Add your ALPHA VANTAGE API KEY to a .env:
-    ```bash
-        cp .env.example .env
+    ```bash cp .env.example .env
     ```
     Then replace the example string with your API key
 </li> 
 
 <li>
-    After almost 4 cells in the notebook, change the ticker string to the ticker you want to run the analysis on. 
+    Under the cell that has a #Set ticker symbol comment, change the ticker string to the ticker you want to run the analysis on. 
 </li>
 
 <li>
